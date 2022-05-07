@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="canonical"
+      href="Prueba"
+    />
+    <meta name="theme-color" content="#36393f" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AlexClient - Discord Webhook Enviar" />
+    <meta
+      property="og:description"
+      content="¡Un sistema que te ayuda a enviar un spam massivo desde una Webhook de Discord!"
+    />
+    <meta
+      name="description"
+      content="¡Un sistema que te ayuda a enviar un spam massivo desde una Webhook de Discord!"
+    />
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Discord Webhook Enviar</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bounce.js/0.8.2/bounce.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css"
+      type="text/css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+  </head>
+  <body>
+    <noscript><div class="no-js">Habilite javascript en su navegador</div></noscript>
+    <div class="title">
+      Discord Webhook Enviar
+      <div class="description">un remitente de webhook simple para discord</div>
+    </div>
+    <div class="body">
+      <div class="input-div">
+        <p>Link de la Webhook:</p>
+        <input type="password" class="input" id="link" />
+      </div>
+      <div class="profile-div">
+        <p>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            onclick="toggle()"
+            id="arrow"
+          >
+            <path
+              d="M12 10L8 6L4 10"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          Perfil
+        </p>
+        <div id="profile">
+          <p>Nombre:</p>
+          <input
+            type="text"
+            class="input"
+            id="name"
+            value="Testing"
+          />
+          <p>URL del Avatar:</p>
+          <input type="text" class="input" id="avatar" />
+        </div>
+        <div class="message-div">
+          <p>Mensaje:</p>
+          <textarea id="message" maxlength="2000"></textarea>
+        </div>
+        <div class="buttonDiv">
+          <button onclick="send()">Send</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Hecho por <a href="https://github.com/AlexClient">SoyAlexClient#9942</a></p>
+      <span
+        ><a href="https://github.com/AlexClient/webhook-sender"
+          >Source code</a
+        ></span
+      >
+      <div class="switch">
+        <label>
+          <input type="checkbox" id="theme" />
+          <span class="check"></span>
+        </label>
+      </div>
+    </div>
+  </body>
+</html>
